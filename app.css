@@ -1,24 +1,64 @@
 .papier,.pierre,.ciseau {
   width: 120px;
   height:120px;
-  background-color: cadetblue;
+  background-color: skyblue;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin : 1em;
   flex-shrink: 0;
+  font-size: 60px;
+  border: 8px solid indigo;
+  box-shadow: 3px 3px 3px black;
+
 }
 
 .container {
-  background-color: chartreuse;
+  background-color: #0063B2FF;
   display: flex;
   justify-content: center;
+}
 
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-width: 400px;
+  background-color: #0063B2FF ;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h2,h1 {
+  text-align: center;
+}
+h1 {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 3em;
+  display: block;
+  margin:40px auto;
+  background-color:indigo;
+  outline: none;
+  border:none;
+  border-radius: 5px;
+  padding:10px;
+  color:white;
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+  
+}
+button:hover {
+  background: #36005e;
+}
+
+.papier:hover,.pierre:hover,.ciseau:hover {
+  background: cornflowerblue;
 }
