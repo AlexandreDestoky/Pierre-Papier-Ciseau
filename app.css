@@ -1,21 +1,23 @@
-.papier,.pierre,.ciseau {
+.papier,
+.pierre,
+.ciseau {
   width: 120px;
-  height:120px;
+  height: 120px;
   background-color: skyblue;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin : 1em;
+  margin: 1em;
   flex-shrink: 0;
   font-size: 60px;
   border: 8px solid indigo;
   box-shadow: 3px 3px 3px black;
-
+  cursor: pointer;
 }
 
 .container {
-  background-color: #0063B2FF;
+  background-color: #0063b2ff;
   display: flex;
   justify-content: center;
 }
@@ -30,11 +32,12 @@ body {
   margin: 0;
   padding: 0;
   min-width: 400px;
-  background-color: #0063B2FF ;
-  font-family: 'Press Start 2P', cursive;
+  background-color: #0063b2ff;
+  font-family: "Press Start 2P", cursive;
 }
 
-h2,h1 {
+h2,
+h1 {
   text-align: center;
 }
 h1 {
@@ -44,21 +47,23 @@ h1 {
 button {
   font-size: 3em;
   display: block;
-  margin:40px auto;
-  background-color:indigo;
+  margin: 40px auto;
+  background-color: indigo;
   outline: none;
-  border:none;
+  border: none;
   border-radius: 5px;
-  padding:10px;
-  color:white;
+  padding: 10px;
+  color: white;
   opacity: 0;
   transition: opacity 1000ms ease-in;
-  
+  cursor: pointer;
 }
 button:hover {
   background: #36005e;
 }
 
-.papier:hover,.pierre:hover,.ciseau:hover {
+.papier:hover,
+.pierre:hover,
+.ciseau:hover {
   background: cornflowerblue;
 }
